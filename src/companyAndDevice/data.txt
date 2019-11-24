@@ -1,0 +1,4 @@
+Maxima;Ukmerges g. 256, Vilnius;food;Varske,2.43,14,pusriebe varske-Duona,1.12,31,sviesi duona
+LIDL;Buivydiskiu g. 16, Vilnius;food;Bandeles,0.35,60,pynute-Pienas,0.90,20,riebus pienas
+Autodalys;Laisves pr. 26, Kaunas;aotodalys;Stabdziu diskai,115,5,stabdziu diskai lengvajam auto-Kaladeles,20.50,8,stabdziu kaladeles
+Baldai&Co;Kauno g. 6, Jonava;Baldai;Sofa,500,2,sofa lova-Duona,1.12,31,sviesi duona
