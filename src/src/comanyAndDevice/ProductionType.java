@@ -1,4 +1,8 @@
 package comanyAndDevice;
 
-public class ProductionType {
+public enum ProductionType {
+    TECHNOLOGIES,
+    AUTOMOBILES,
+    GARDEN_TOOLS,
+    FOOD;
 }
