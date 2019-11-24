@@ -1,4 +1,4 @@
-package comanyAndDevice;
+package companyAndDevice;
 
 public class CompanyAndDeviceMain {
 
