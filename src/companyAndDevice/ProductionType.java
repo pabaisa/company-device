@@ -5,4 +5,5 @@ public enum ProductionType {
     AUTOMOBILES,
     GARDEN_TOOLS,
     FOOD;
+
 }

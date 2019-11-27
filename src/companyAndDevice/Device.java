@@ -28,5 +28,9 @@ public class Device {
     public String getDescription() {
         return description;
     }
+
+public String toString(){
+        return String.format ("Device name: %s, price: %s, quantity: %s, description: %s", name, price, quantity, description);
+    }
 }
 
