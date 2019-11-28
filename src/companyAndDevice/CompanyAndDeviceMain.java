@@ -13,18 +13,6 @@ public class CompanyAndDeviceMain {
     public static void main(String[] a) {
         List<Company> companyList = getCompanyListFromFile();
 
-        for (Company company : companyList) {
-            System.out.println(company.toString());
-        }
-
-        for (Company value : companyList) {
-            System.out.println(Math.max(value.getDevices().get(0).getPrice(), value.getDevices().get(1).getPrice()));
-        }
-        for (Company company: companyList){
-            if (company.getProductionType().equals("TECHNOLOGIES")){
-                System.out.println(company.toString());
-            }
-        }
     }
 
     private static List<Company> getCompanyListFromFile() {
