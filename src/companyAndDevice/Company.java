@@ -24,7 +24,7 @@ public class Company {
     public List<Device> getDevices() {return devices;}
 
      public String toString(){
-        return String.format ("Company name: %s, address: %s, Production Type: %s, %s", name, address, getProductionType(), devices.get(0).toString());
+        return String.format ("Company name: %s, address: %s, Production Type: %s, %s, %s", name, address, getProductionType(), devices.get(0).toString(), devices.get(1).toString());
     }
 
 }
