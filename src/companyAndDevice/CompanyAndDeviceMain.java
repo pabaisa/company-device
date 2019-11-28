@@ -13,7 +13,7 @@ public class CompanyAndDeviceMain {
     public static void main(String[] a) {
         List<Company> companyList = getCompanyListFromFile();
 
-/*        for (Company company : companyList) {
+        for (Company company : companyList) {
             System.out.println(company.toString());
         }
 
@@ -24,7 +24,7 @@ public class CompanyAndDeviceMain {
             if (company.getProductionType().equals("TECHNOLOGIES")){
                 System.out.println(company.toString());
             }
-        }*/
+        }
     }
 
     private static List<Company> getCompanyListFromFile() {
