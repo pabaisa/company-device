@@ -7,29 +7,15 @@ import java.util.List;
 public class CompanyAndDeviceMain {
 
     private static final String FILE_LOCATION = "C:\\Users\\Vartotojas\\IdeaProjects\\company-device\\src\\companyAndDevice\\data.txt";
-    private static final String OUTPUT_FILE_LOCATION = "C:\\Users\\Vartotojas\\IdeaProjects\\company-device\\src\\companyAndDevice\\output.txt";
+    private static final String OUTPUT_FILE_LOCATION = "C:\\Users\\Vartotojas\\IdeaProjects\\company-device\\src\\companyAndDevice\\result.txt";
 
     public static void main(String[] a) {
         List<Company> companyList = getCompanyListFromFile();
 
-        for (Company company : companyList) {
-            if (company.getDevices().get(0).getPrice() > company.getDevices().get(1).getPrice()) {
-                System.out.printf("Brangiausias %s Device objektas yra: %s", company.getName(), company.getDevices().get(0).getName());
-                System.out.println();
-            }
-            if (company.getDevices().get(0).getPrice() < company.getDevices().get(1).getPrice()) {
-                System.out.printf("Brangiausias %s Device objektas yra: %s", company.getName(), company.getDevices().get(1).getName());
-                System.out.println();
-            }
-
-        }
         writeDataToFile(companyList);
+
+        System.out.println("Duomenys sėkmingai surašyti į failą.");
     }
-/*        for (Company company: companyList){
-            if (company.getProductionType().equals("TECHNOLOGIES")){
-                System.out.println(company.toString());
-            }
-        }*/
 
     private static List<Company> getCompanyListFromFile() {
         List<Company> companyList = new ArrayList<>();
@@ -96,25 +82,27 @@ public class CompanyAndDeviceMain {
             bw.write("5 objektų inicializavimas:\n\n");
 
             for (Company company : data) {
-                bw.write(String.valueOf(company) + "\n");
+                bw.write(company + "\n");
             }
             bw.write("\n");
 
             for (Company company : data) {
                 if (company.getDevices().get(0).getPrice() > company.getDevices().get(1).getPrice()) {
-                 bw.write("Brangiausias " + company.getName() + " Device objektas yra: " + company.getDevices().get(0).getName()+ "\n");
+                    bw.write("Brangiausias " + company.getName() + " Device objektas yra: " + company.getDevices().get(0).getName() + "\n");
                 }
                 if (company.getDevices().get(0).getPrice() < company.getDevices().get(1).getPrice()) {
-                    bw.write("Brangiausias " + company.getName() + " Device objektas yra: " + company.getDevices().get(1).getName()+ "\n");
-                }
-
-            }
-
-
-                } catch(IOException e){
-                    System.out.println("Klaida, rasant i faila");
+                    bw.write("Brangiausias " + company.getName() + " Device objektas yra: " + company.getDevices().get(1).getName() + "\n");
                 }
             }
+            bw.write("\nVisi Company objektai, kurių productType -> TECHNOLOGIES:\n\n");
 
-        }
+            for (Company company : data) {
+                if (company.getProductionType().equals("TECHNOLOGIES")) {
+                    bw.write(company + "\n"); }
+            }
+
+        } catch (IOException e) {
+            System.out.println("Klaida, rasant i faila"); }
+    }
+}
 

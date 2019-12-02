@@ -1,5 +1,5 @@
 Maxima;Ukmerges g. 256, Vilnius;food;Varske,2.43,14,pusriebe varske-Duona,3.12,31,sviesi duona
 LIDL;Buivydiskiu g. 16, Vilnius;food;Bandeles,0.35,60,pynute-Pienas,0.90,20,riebus pienas
-Autodalys;Laisves pr. 26, Kaunas;automobiles;Stabdziu diskai,115,5,stabdziu diskai lengvajam auto-Kaladeles,20.50,8,stabdziu kaladeles
-Garden&Co;Kauno g. 6, Jonava;garden_tools;žoliapjpovė,500,2,benzininė-grėblys,48.12,31,medinis kotas
-Coputerland;Dzuku g. 4, Vilnius;technologies;kompiuteris,2000,1,nesiojamas-pele,18.99,2,optine
+Autodalys;Laisves pr. 26, Kaunas;automobiles;Stabdziu diskai,115,5,Stabdziu diskai lengvajam auto-Kaladeles,20.50,8,stabdziu kaladeles
+Garden&Co;Kauno g. 6, Jonava;garden_tools;Žoliapjpovė,500,2,benzininė-Grėblys,48.12,31,medinis kotas
+Computerland;Dzuku g. 4, Vilnius;technologies;Kompiuteris,2000,1,nesiojamas-Pelė,18.99,2,optinė
